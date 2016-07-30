@@ -324,6 +324,7 @@ GameObject:
   - 224: {fileID: 1519022594}
   - 222: {fileID: 1519022596}
   - 114: {fileID: 1519022595}
+  - 114: {fileID: 1519022597}
   m_Layer: 5
   m_Name: distance_number
   m_TagString: Untagged
@@ -381,13 +382,25 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000000
+  m_Text: 384400
 --- !u!222 &1519022596
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1519022593}
+--- !u!114 &1519022597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1519022593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b240f0c65144e4f83a553d166353bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceGUI: {fileID: 1519022595}
 --- !u!1 &1664202376
 GameObject:
   m_ObjectHideFlags: 0
