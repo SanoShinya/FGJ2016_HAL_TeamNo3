@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{734BC8DA-C07F-72FE-D926-4D2F0BD29803}</ProjectGuid>
+    <ProjectGuid>{FFC2164F-0939-9C1E-0A07-8251EA9AEF94}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BackGround.cs" />
+     <Compile Include="Assets\SceneKanri.cs" />
      <Compile Include="Assets\WR_wHiteRabbiT-sTudio\WRFramework\Unity\Extensions\VectorExtensions.cs" />
      <Compile Include="Assets\WR_wHiteRabbiT-sTudio\WRFramework\Unity\UI\GUIHelper.cs" />
      <Compile Include="Assets\WR_wHiteRabbiT-sTudio\WRFramework\Unity\Util\Logo.cs" />

@@ -25,13 +25,13 @@ public class BackGround : MonoBehaviour {
         {
             transform.position -= new Vector3(0.001f, 0f, 0f);
             basaCnt++;
-            print("FALSE");
+            //print("FALSE");
         }
         else if (Timi == true)
         {
             transform.position += new Vector3(0.001f, 0f, 0f);
             basaCnt++;
-            print("TRUE");
+            //print("TRUE");
         }
 
 

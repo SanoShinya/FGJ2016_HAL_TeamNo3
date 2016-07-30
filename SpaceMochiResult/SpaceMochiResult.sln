@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{F3A5E688-6E9E-BA1D-2B44-623C0584AC49}") = "SpaceMochiResult", "Assembly-CSharp.csproj", "{FFC2164F-0939-9C1E-0A07-8251EA9AEF94}"
+EndProject
+Project("{F3A5E688-6E9E-BA1D-2B44-623C0584AC49}") = "SpaceMochiResult", "Assembly-CSharp-Editor.csproj", "{BD6F6C2D-FDB0-37F9-0CAF-90605D3AE6D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFC2164F-0939-9C1E-0A07-8251EA9AEF94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC2164F-0939-9C1E-0A07-8251EA9AEF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC2164F-0939-9C1E-0A07-8251EA9AEF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC2164F-0939-9C1E-0A07-8251EA9AEF94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6F6C2D-FDB0-37F9-0CAF-90605D3AE6D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6F6C2D-FDB0-37F9-0CAF-90605D3AE6D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6F6C2D-FDB0-37F9-0CAF-90605D3AE6D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6F6C2D-FDB0-37F9-0CAF-90605D3AE6D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
