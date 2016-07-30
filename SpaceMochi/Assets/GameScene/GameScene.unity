@@ -343,6 +343,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 438998b9766bd4af19756af6f6b2a937, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1061269211
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000013849873054, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013849873054, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013849873054, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 15.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013849873054, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013849873054, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013849873054, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013849873054, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013849873054, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1254695042
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

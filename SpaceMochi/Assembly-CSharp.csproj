@@ -50,6 +50,7 @@
      <Compile Include="Assets\GameScene\Scripts\SingletonMonoBehavior.cs" />
      <Compile Include="Assets\Room\rabbitTop.cs" />
      <Compile Include="Assets\Room\rabbitTop1.cs" />
+     <Compile Include="Assets\Space\BackScript.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
