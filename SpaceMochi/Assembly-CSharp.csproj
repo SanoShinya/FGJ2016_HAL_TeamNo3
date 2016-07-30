@@ -45,7 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Master\Scripts\Pestle.cs" />
+     <Compile Include="Assets\GameScene\Scripts\GameManager.cs" />
+     <Compile Include="Assets\GameScene\Scripts\Pestle.cs" />
+     <Compile Include="Assets\GameScene\Scripts\SingletonMonoBehavior.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
