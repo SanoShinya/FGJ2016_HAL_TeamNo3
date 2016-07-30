@@ -13,4 +13,9 @@ public class Click : MonoBehaviour {
     {
 	    
 	}
+
+	public void clickStartButton()
+	{
+		Application.LoadLevel("GameScene");
+	}
 }
