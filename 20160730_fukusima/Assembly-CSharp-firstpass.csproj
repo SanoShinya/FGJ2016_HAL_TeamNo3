@@ -45,11 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\MoveSample.cs" />
-     <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
-     <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
      <Compile Include="Assets\Plugins\Pixelplacement\iTween\iTween.cs" />
-     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
+     <Compile Include="Assets\Plugins\Pixelplacement\iTween\rabbitTop.cs" />
+     <Compile Include="Assets\Plugins\Pixelplacement\iTween\rabbitTop1.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
