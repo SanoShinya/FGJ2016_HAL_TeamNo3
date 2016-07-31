@@ -11,6 +11,8 @@ public class SceneKanri : MonoBehaviour {
     private GameObject UI1;
     private GameObject UI2;
 
+    public Text Score;
+
     // Use this for initialization
     void Start () {
 
@@ -24,6 +26,14 @@ public class SceneKanri : MonoBehaviour {
 
         // BGM再生
         AudioManager.getInstance.PlayBGM("i76005_in_secret");
+
+        
+
+        float ClearTime;
+
+        ClearTime = PlayerPrefs.GetFloat("ClearTime", 999.0f);	//クリアタイムを保存
+
+        Score.text = ClearTime.ToString();
     }
 	
 	// Update is called once per frame
