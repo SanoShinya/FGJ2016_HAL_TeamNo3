@@ -3,15 +3,17 @@ using System.Collections;
 
 public class ParticleScript : MonoBehaviour
 {
-    static float time = 0;
+    static float time = 0;  //タイマー
 
-	void Start () {
+	void Start () 
+    {
         
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        //エフェクトの設定
+	void Update () 
+    {
+        //エフェクトの設定(RGB値, サイズ, 表示時間)
         SetEffect(1.0f, 1.0f, 0.0f, 3.0f, 10.0f);
 
         // エフェクトの再生
@@ -27,6 +29,7 @@ public class ParticleScript : MonoBehaviour
             // エフェクトの停止
             GetComponent<ParticleSystem>().Stop();
         }
+
         //タイマーのカウント
         else
         {
@@ -34,7 +37,7 @@ public class ParticleScript : MonoBehaviour
         }
 	}
 
-    //エフェクトの設定(RGB値, サイズ)
+    //エフェクトの設定(RGB値, サイズ, 表示時間)
     void SetEffect(float red, float green, float blue, float size, float life)
     {
         // カラーの設定
@@ -45,7 +48,6 @@ public class ParticleScript : MonoBehaviour
         col.enabled = true;
         
         Gradient grad = new Gradient();
-        //grad.SetKeys(new GradientColorKey[] { new GradientColorKey(Color.red, red), new GradientColorKey(Color.green, green), new GradientColorKey(Color.blue, blue) }, new GradientAlphaKey[] { new GradientAlphaKey(1.0f, 0.0f), new GradientAlphaKey(0.0f, 1.0f) });
         grad.SetKeys(new GradientColorKey[] { new GradientColorKey(color, 1.0f) }, new GradientAlphaKey[] { new GradientAlphaKey(1.0f, 0.0f), new GradientAlphaKey(0.0f, 1.0f) });
         
         col.color = new ParticleSystem.MinMaxGradient(grad);
