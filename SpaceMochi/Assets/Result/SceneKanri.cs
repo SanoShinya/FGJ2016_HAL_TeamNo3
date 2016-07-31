@@ -22,6 +22,8 @@ public class SceneKanri : MonoBehaviour {
         UI2 = GameObject.Find("Canvas");
         UI2.GetComponent<Canvas>().enabled = false;
 
+        // BGM再生
+        AudioManager.getInstance.PlayBGM("i76005_in_secret");
     }
 	
 	// Update is called once per frame
