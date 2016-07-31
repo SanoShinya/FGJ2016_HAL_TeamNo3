@@ -28,4 +28,6 @@ public class Timer : MonoBehaviour
         time += 1f * Time.deltaTime;            //1秒(60フレーム)毎にカウントダウン
         timeGUI.text = ((int)time).ToString();  //カウントダウンした結果を文字列化し表示
     }
+
+	public float getTime(){ return time; }
 }

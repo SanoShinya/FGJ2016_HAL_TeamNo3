@@ -95,6 +95,10 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 			{
 				if(_distanceUI.getDistance() <= 0.0f)
 				{
+					float clearTime = _timerUI.getTime();
+					PlayerPrefs.SetFloat("ClearTime", clearTime);	//クリアタイムを保存
+					PlayerPrefs.Save();	//領域に書き込み	
+					
 					//終了
 					Application.LoadLevel("xxResultxx");
 					_state = State.Goal;

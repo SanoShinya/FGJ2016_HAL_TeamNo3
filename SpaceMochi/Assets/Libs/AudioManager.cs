@@ -83,6 +83,7 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager> {
 		this.bgmSource.Stop();
 		this.bgmSource.clip = this.bgmDict[bgmName];
 		this.bgmSource.Play(); 
+		this.bgmSource.loop = true;
 	}
 	
 	public void StopBGM()
