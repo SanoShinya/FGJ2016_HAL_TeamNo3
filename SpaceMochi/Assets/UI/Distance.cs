@@ -16,9 +16,10 @@ public class Distance : MonoBehaviour
     private float distance = 384400.0f;  //距離の初期値を設定
     private float speed  = 0.0f;     //スペースシャトル航行速度(※※※暫定的に固定値)
     private int digit = 0;               //桁数を検出
-	private float accel = -1.0f;
+	private float accel = -2.0f;
 
 	private BackScript _bg;
+	private SpeedMeter _speedMeter;
 
     //初期化処理
     void Start ()
@@ -26,13 +27,15 @@ public class Distance : MonoBehaviour
         distanceGUI.text = distance.ToString(); //距離を代入
 
 		_bg = GameObject.Find("Space/shootingstar").GetComponent<BackScript>();
+		_speedMeter = GameObject.Find("SpeedMeter/Canvas/speed_meter").GetComponent<SpeedMeter>();
+		_speedMeter.setPersentage(speed);
     }
 	
 	//更新処理(毎フレーム)
 	void Update (/*航行速度speed*/)
     {
         distance -= speed;                           //速度-距離
-		speed = Mathf.Max(speed - accel, 0.0f);		//加速度で速度を更新
+		speed = Mathf.Max(speed + accel, 0.0f);		//加速度で速度を更新
 
         if(distance < 0)                             //距離カンスト
         {
@@ -53,6 +56,8 @@ public class Distance : MonoBehaviour
             }
             distanceGUI.text += distance.ToString(); //距離を文字列に格納して表示
         }
+
+		_speedMeter.setPersentage(speed * 0.1f);
 	}
 
 	public void setSpeed(float setSpeed)
