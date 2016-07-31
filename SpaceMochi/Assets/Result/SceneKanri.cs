@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SceneKanri : MonoBehaviour {
 
@@ -7,13 +8,21 @@ public class SceneKanri : MonoBehaviour {
     bool Result;
     int Cnt;
 
-	// Use this for initialization
-	void Start () {
+    private GameObject UI1;
+    private GameObject UI2;
+
+    // Use this for initialization
+    void Start () {
 
         tekitou = false;
         Result = false;
         Cnt = 0;
-	}
+
+        UI1 = GameObject.Find("Canvas2");
+        UI2 = GameObject.Find("Canvas");
+        UI2.GetComponent<Canvas>().enabled = false;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -39,10 +48,12 @@ public class SceneKanri : MonoBehaviour {
         if (Cnt == 70)
         {
             Result = true;
-            GetComponent<Canvas>().enabled = false;
+            UI1.GetComponent<Canvas>().enabled = false;
+            UI2.GetComponent<Canvas>().enabled = true;
+
         }
 
 
-	
-	}
+
+    }
 }
