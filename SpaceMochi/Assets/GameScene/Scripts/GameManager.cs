@@ -24,6 +24,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 	private Text _startCountDownText = null;
 	private Timer _timerUI = null;
 	private Distance _distanceUI = null;
+	private ParticleScript _particle;
 
 	private string[] str = new string[]{ "hoge", "hoge", "hoge" }; 
 
@@ -57,6 +58,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 		}
 
 		if(target != null) _startCountDownText = target;
+
+		_particle = GameObject.Find("ParticleSystem").GetComponent<ParticleScript>();
 
 		// BGM再生
 		AudioManager.getInstance.PlayBGM("game");
@@ -120,5 +123,5 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 	}
 
 	public void callPet(){ _distanceUI.addSpeed(50.0f); }
-	public void callTan(){ _distanceUI.addSpeed(50.0f); }
+	public void callTan(){ _distanceUI.addSpeed(50.0f); _particle.fire(); }
 }
