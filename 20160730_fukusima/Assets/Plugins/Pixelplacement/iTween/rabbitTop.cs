@@ -20,5 +20,8 @@ public class rabbitTop : MonoBehaviour {
 		} else {
 			nTime = 0;
 		}
+		if (nTime == 0) {
+			this.transform.rotation = Quaternion.Euler (-67.0f, -90.0f, 90.0f);
+		}
 	}
 }
