@@ -45,9 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BGM.cs" />
      <Compile Include="Assets\GameScene\Scripts\GameManager.cs" />
      <Compile Include="Assets\GameScene\Scripts\Pestle.cs" />
-     <Compile Include="Assets\GameScene\Scripts\SingletonMonoBehavior.cs" />
+     <Compile Include="Assets\Libs\AudioManager.cs" />
+     <Compile Include="Assets\Libs\SingletonMonoBehavior.cs" />
      <Compile Include="Assets\Result\BackGround.cs" />
      <Compile Include="Assets\Result\SceneKanri.cs" />
      <Compile Include="Assets\Result\WR_wHiteRabbiT-sTudio\WRFramework\Unity\Extensions\VectorExtensions.cs" />
@@ -57,6 +59,8 @@
      <Compile Include="Assets\Room\rabbitTop1.cs" />
      <Compile Include="Assets\Space\BackScript.cs" />
      <Compile Include="Assets\Title\Click.cs" />
+     <Compile Include="Assets\UI\Distance.cs" />
+     <Compile Include="Assets\UI\Timer.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
