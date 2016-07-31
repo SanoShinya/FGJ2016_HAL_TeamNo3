@@ -407,6 +407,7 @@ GameObject:
   - 222: {fileID: 713233510}
   - 114: {fileID: 713233509}
   - 114: {fileID: 713233508}
+  - 114: {fileID: 713233511}
   m_Layer: 5
   m_Name: GoTitle
   m_TagString: Untagged
@@ -471,7 +472,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 713233509}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 713233511}
+        m_MethodName: clickGoTitle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &713233509
@@ -507,6 +519,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713233506}
+--- !u!114 &713233511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 713233506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf3e05c6b797184492804ab345d087c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1145137632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,15 +1234,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.10143651
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0046704
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.056916147
+      value: -1.44
       objectReference: {fileID: 0}
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalRotation.x
