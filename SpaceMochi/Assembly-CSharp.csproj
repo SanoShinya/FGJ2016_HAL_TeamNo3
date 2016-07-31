@@ -61,6 +61,7 @@
      <Compile Include="Assets\Title\Click.cs" />
      <Compile Include="Assets\UI\Distance.cs" />
      <Compile Include="Assets\UI\Timer.cs" />
+     <Compile Include="Assets\move.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

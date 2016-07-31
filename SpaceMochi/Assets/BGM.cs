@@ -12,10 +12,11 @@ public class BGM : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(0))
-        {
+        if (Input.GetMouseButtonDown(0)){
+
             // SE再生
             AudioManager.getInstance.PlaySE("Koukaon02");
+
         }
 	
 	}
