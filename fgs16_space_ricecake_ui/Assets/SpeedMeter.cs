@@ -1,5 +1,5 @@
 ﻿//-------------------------------------------------------------------------------------------------
-//色変更処理()
+//速度メーター処理(SpeedMeter.cs)
 //Author:imakura kazuhiro
 //-------------------------------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ public class SpeedMeter : MonoBehaviour
 
     RectTransform rt;
 
-    private float height = 600;
+    private float height = 100;    //高さ(100分割)
     //初期化処理
     void Start ()
     {
@@ -24,6 +24,6 @@ public class SpeedMeter : MonoBehaviour
     void Update()
     {
         height -= 1;
-        rt.sizeDelta = new Vector2(70, height);
+        rt.sizeDelta = new Vector2(70, height*6);
     }
 }
