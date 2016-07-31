@@ -489,7 +489,7 @@ Prefab:
     - target: {fileID: 114000010697892348, guid: 9c7bed1555fb64cb0a82639f019939d7,
         type: 2}
       propertyPath: scrollSpeedY
-      value: 0.05
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c7bed1555fb64cb0a82639f019939d7, type: 2}

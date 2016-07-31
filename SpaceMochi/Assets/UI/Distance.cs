@@ -61,4 +61,6 @@ public class Distance : MonoBehaviour
 	} 
 	public float getSpeed() { return speed; }
 	public void addSpeed(float add){ speed += add; }
+
+	public float getDistance(){ return distance; }
 }

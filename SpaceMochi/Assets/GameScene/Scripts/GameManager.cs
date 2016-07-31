@@ -25,6 +25,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 	private Timer _timerUI = null;
 	private Distance _distanceUI = null;
 
+	private string[] str = new string[]{ "hoge", "hoge", "hoge" }; 
 
 	// Use this for initialization
 	void Start () {
@@ -92,7 +93,12 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 
 		case State.Play:
 			{
-
+				if(_distanceUI.getDistance() <= 0.0f)
+				{
+					//終了
+					Application.LoadLevel("xxResultxx");
+					_state = State.Goal;
+				}
 			}
 			break;
 
