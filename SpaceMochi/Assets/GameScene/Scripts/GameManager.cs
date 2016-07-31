@@ -22,6 +22,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 	private Pestle _pestle = null;
 	private Canvas _uiCanvas = null;
 	private Text _startCountDownText = null;
+	private Timer _timerUI = null;
+	private Distance _distanceUI = null;
+
 
 	// Use this for initialization
 	void Start () {
@@ -33,7 +36,15 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 		_pestle.enabled = false;
 
 		// UIキャンバス
-		_uiCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+		_uiCanvas = GameObject.Find("DummyUI").GetComponent<Canvas>();
+
+		// タイマー
+		_timerUI = GameObject.Find("UI/Canvas/time_number").GetComponent<Timer>();
+		_timerUI.enabled = false;
+
+		// 距離メーター
+		_distanceUI = GameObject.Find("UI/Canvas/distance_number").GetComponent<Distance>();
+		_distanceUI.enabled = false;
 
 		// ゲーム開始カウントダウン
 		Text target = null;
@@ -45,6 +56,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 		}
 
 		if(target != null) _startCountDownText = target;
+
+		// BGM再生
+		AudioManager.getInstance.PlayBGM("game");
 	}
 	
 	// Update is called once per frame
@@ -55,7 +69,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 		case State.StartCountDown:
 			{
 				_startCountDownTimer -= Time.deltaTime;
-				Debug.Log(Time.deltaTime);
+//				Debug.Log(Time.deltaTime);
 
 				if(string.Compare("3", _startCountDownText.text) == 0 && _startCountDownTimer <= 2.0f)
 				{
@@ -70,9 +84,20 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 					_startCountDownText.text = "";
 					_state = State.Play;
 					_pestle.enabled = true; //杵を有効
+					_timerUI.enabled = true;  //タイマーを有効化
+					_distanceUI.enabled = true; //距離メーターを有効化
 				}
 			}
 			break;
+
+		case State.Play:
+			{
+
+			}
+			break;
+
+		default:
+			break;	
 		}
 
 	}
@@ -83,4 +108,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
 
 
 	}
+
+	public void callPet(){ _distanceUI.addSpeed(50.0f); }
+	public void callTan(){ _distanceUI.addSpeed(50.0f); }
 }

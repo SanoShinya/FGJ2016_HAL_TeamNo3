@@ -55,7 +55,10 @@ public class Pestle : MonoBehaviour {
 					Debug.Log("ぺっ");
 					_pettanState = PettanState.Pet;
 					GameManager.getInstance.setSystemText("ぺっ");
+					GameManager.getInstance.callPet();	//ぺっを通知
 
+					// SE再生
+					AudioManager.getInstance.PlaySE("pet");
 				}
 			}
 			else if(rot.x > 45.0f)
@@ -66,6 +69,10 @@ public class Pestle : MonoBehaviour {
 					Debug.Log("たん");
 					_pettanState = PettanState.Tan;
 					GameManager.getInstance.setSystemText("たん");
+					GameManager.getInstance.callTan();	//たんを通知
+
+					// SE再生
+					AudioManager.getInstance.PlaySE("tan");
 				}
 			}
 			transform.rotation = Quaternion.Euler(rot);
